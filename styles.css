@@ -223,3 +223,40 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 @media (max-width: 850px) {
   .hero-art.hero-photo { height: auto; min-height: 0; width: min(100%, 500px); justify-self: center; }
 }
+
+/* Simplified content and a shorter page */
+.section-pad { padding: 60px 8vw; }
+.hero { min-height: 0; padding: 48px 7vw 60px; grid-template-columns: .9fr 1.1fr; gap: 5vw; }
+.hero-copy { padding: 20px 0; }
+.hero-art.hero-photo { max-width: 420px; width: 100%; justify-self: center; }
+.hero h1 { font-size: clamp(48px, 5.4vw, 72px); }
+.hero-note { margin-top: 28px; }
+.section-heading { margin-bottom: 32px; max-width: none; text-align: left; }
+.section-heading h2, .about h2, .music h2, .faq h2, .contact h2 { font-size: clamp(36px, 4vw, 50px); margin: 0 0 22px; line-height: 1.05; }
+.service-card { min-height: 0; padding: 25px 22px; }
+.service-card h3 { margin-top: 0; }
+.service-card .text-link { padding-top: 10px; }
+.service-note { margin-top: 20px; }
+.about { grid-template-columns: .8fr 1.2fr; gap: 6vw; }
+.about-visual { max-width: 320px; width: 100%; justify-self: center; }
+.about-copy p:not(.eyebrow) { font-size: 15px; }
+.music { border-top: 1px solid var(--line); }
+.music .body-large { max-width: 720px; margin-bottom: 0; }
+.contact-layout { margin-top: 0; gap: 7vw; }
+.contact-details { margin-top: 24px; }
+.inquiry-form { padding-top: 0; border-top: 0; }
+.form-row { margin-bottom: 16px; }
+.footer { padding: 32px 7vw 24px; }
+.footer-links { margin: 20px 0; }
+@media (max-width: 850px) {
+  .section-pad { padding: 42px 7vw; }
+  .hero { grid-template-columns: 1fr; padding: 30px 6vw 42px; gap: 24px; }
+  .hero-copy { padding: 0; }
+  .hero h1 { font-size: clamp(46px, 9vw, 64px); }
+  .hero-actions { margin-top: 24px; }
+  .hero-art.hero-photo { max-width: 350px; }
+  .about { grid-template-columns: 1fr; gap: 28px; }
+  .about-copy { grid-row: 1; }
+  .about-visual { max-width: 280px; }
+  .contact-layout { gap: 30px; }
+}
