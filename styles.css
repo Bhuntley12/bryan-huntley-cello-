@@ -260,3 +260,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .about-visual { max-width: 280px; }
   .contact-layout { gap: 30px; }
 }
+
+.form-trap { display: none !important; }
+.copy-inquiry { display: block; margin: 14px auto 0; background: transparent; border: 0; border-bottom: 1px solid var(--gold); padding: 3px 0; color: var(--muted); cursor: pointer; }
+.form-submit:disabled { opacity: .65; cursor: wait; transform: none; }
+.form-status { margin-top: 16px; }

@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=compact-1">
+  <link rel="stylesheet" href="styles.css?v=direct-1">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -118,7 +118,8 @@
             <span>Kaysville, Utah · Available throughout Utah</span>
           </div>
         </div>
-        <form class="inquiry-form" id="inquiry-form">
+        <form class="inquiry-form" id="inquiry-form" action="https://formsubmit.co/bhuntley444@gmail.com" method="POST">
+          <input type="text" name="_honey" class="form-trap" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div class="form-row">
             <label for="client-name">Your name <span>*</span></label>
             <input id="client-name" name="name" autocomplete="name" required placeholder="Name">
@@ -149,9 +150,9 @@
             <label for="message">Tell me a little more</label>
             <textarea id="message" name="message" rows="4" placeholder="Share your plans, music ideas, or any questions..."></textarea>
           </div>
-          <button class="button button-dark form-submit" type="submit">Open inquiry in email <span aria-hidden="true">↗</span></button>
-          <button class="button button-outline form-submit copy-inquiry" type="button" id="copy-inquiry">Copy inquiry instead</button>
-          <p class="form-note">Opens an email draft for you to send. Or copy your inquiry and email <a href="mailto:bhuntley444@gmail.com">bhuntley444@gmail.com</a>. This site does not save your details.</p>
+          <button class="button button-dark form-submit" type="submit">Send inquiry <span aria-hidden="true">→</span></button>
+          <button class="text-link copy-inquiry" type="button" id="copy-inquiry">Prefer email? Copy inquiry</button>
+          <p class="form-note">Inquiries are processed by <a href="https://formsubmit.co/" target="_blank" rel="noopener">FormSubmit</a> and emailed to Bryan.</p>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           <div id="inquiry-preview" hidden><label for="inquiry-text">Your inquiry · review or copy</label><textarea id="inquiry-text" rows="10" readonly></textarea></div>
         </form>
@@ -164,7 +165,7 @@
     <div class="footer-links"><a href="mailto:bhuntley444@gmail.com">Email</a><a href="tel:+17203562952">Call</a><a href="#home">Back to top ↑</a></div>
     <small>© <span id="year"></span> Bryan Huntley. All rights reserved.</small>
   </footer>
-  <script src="script.js?v=bf15d9a"></script>
+  <script src="script.js?v=direct-1"></script>
 </body>
 </html>
 
