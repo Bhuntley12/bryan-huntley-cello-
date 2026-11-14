@@ -214,3 +214,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .hero-intro { font-size: 20px; }
 }
 
+
+/* Original outdoor cello portraits, April 2023 */
+.hero-art.hero-photo { height: auto; min-height: 0; aspect-ratio: 1399 / 2100; background: #ccb6a1; }
+.hero-art.hero-photo::before { display: none; }
+.hero-photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.about-portrait { display: block; width: 100%; height: auto; background: #ccb6a1; }
+@media (max-width: 850px) {
+  .hero-art.hero-photo { height: auto; min-height: 0; width: min(100%, 500px); justify-self: center; }
+}
